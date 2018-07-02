@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<!-- Free software (c) 2012 andelf -->
+<!-- This program is open source code released under -->
+<!-- the terms of the GNU General Public License -->
+<!-- as published by the Free Software Foundation. -->
+
+<meta name="author" content="zhangzl"/>
+<meta name="language" content="zh"/>
+
+<category>
+  <pattern> * 答案是 * </pattern>
+  <template>
+    <system>python learn.py <star index="1" /> <star index="2" /> </system>
+    <learn>auto-gen.aiml</learn>
+    好的我学会了, 你可以再问我试试.
+  </template>
+</category>
+</aiml>
